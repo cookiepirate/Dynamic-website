@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Application</title>
+    <link rel = "stylesheet" href="{{url_for('static',filename='css/materialize.min.css')}}">
+    <script src="{{url_for('static',filename='js/materialize.min.css')}}"></script>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">House Keeping</a>         
+          </ul>
+        </div>
+      </nav>
+    <div class="container">
+        <!-- Page Content goes here -->
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card " >
+            <div class="card-content ">
+              <span class="card-title">Asset</span>
+              <p>An asset can be an object like chair, table, carpet, soap dispenser, coffee machine, networking, wiring, generator, electricals or a place like 1st floor, rest room, meeting rooms.</p>
+            </div>
+            <div class="card-action">
+              <a href="add-asset">Add Asset</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card ">
+            <div class="card-content">
+              <span class="card-title">Task</span>
+              <p>Task is an activity that is performed on an asset. Multiple tasks can be performed on an asset. Like vaccuming the floor, mopping the floor or clean the soap dispenser, refilling the soap dispenser. Each task has a frequency namely hourly, daily, weekly, monthly, yearly.</p>
+            </div>
+            <div class="card-action">
+              <a href="add-task">Add Task</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card ">
+            <div class="card-content ">
+              <span class="card-title">Admin</span>
+              <p>Creates and manages assets in the system. Generates and updates tasks for each such asset. Admin also manages the workers available in the system.</p>
+            </div>
+            <div class="card-action">
+              <a href="admin">Sign in as Admin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 12">
+          <div class="card ">
+            <div class="card-content">
+              <span class="card-title">Workers</span>
+              <p>A Worker is someone who performs the Task. A worker can perform multiple tasks based on the skillset.</p>
+            </div>
+            <div class="card-action">
+              <a href="add-worker">Add Worker</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+</head>
+<body>
+    
+</body>
+</html>
